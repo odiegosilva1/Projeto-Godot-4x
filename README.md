@@ -1,40 +1,39 @@
-# 🎮 Protótipos e Projetos de Jogos Independentes
+# Projeto de Sobrevivência em Ilha - Godot 4
 
-Bem-vindo ao repositório de **projetos e protótipos de jogos independentes**! Este espaço foi criado para armazenar, documentar e compartilhar experimentos e conceitos de jogos desenvolvidos de forma independente.
+## Visão Geral
 
-Explore e aproveite para testar as demos e protótipos disponíveis. Feedbacks são sempre bem-vindos!
+Um jogo 2D top-down de sobrevivência onde você está preso em uma ilha com recursos finitos. Sua missão é gerenciar recursos, enfrentar criaturas e construir uma jangada para escapar.
 
-## 📂 Sobre os Projetos
+## Mecânicas Principais
 
-Este repositório contém uma variedade de projetos de jogos, desde conceitos experimentais até protótipos jogáveis. Cada projeto busca explorar novas mecânicas, estilos visuais e narrativas, servindo tanto como prática quanto como inspiração.
+- **Sobrevivência**: Gerencie fome, sede, saúde e cansaço
+- **Coleta de Recursos**: Madeira, pedra, fibras e alimentos (todos finitos)
+- **Crafting**: Crie ferramentas, armas, abrigo e a jangada final
+- **Combate**: Enfrente criaturas que protegem recursos valiosos
+- **Exploração**: Descubra diferentes áreas da ilha com recursos variados
 
-Cada pasta de projeto inclui:
+## Progressão
 
-- Descrição do projeto
-- Tecnologias usadas
-- Instruções de execução
-- Link para o jogo [Itch.io](https://itch.io)
+1. **Fase Inicial**: Coletar recursos básicos e ferramentas simples
+2. **Fase Intermediária**: Explorar a ilha e gerenciar necessidades
+3. **Fase Final**: Encontrar recursos raros e construir a jangada de escape
 
-> **Nota**: Alguns jogos ainda estão em fase de protótipo e podem conter bugs ou mecânicas em desenvolvimento.
+## Controles
 
-3. Confira o README específico de cada projeto para instruções detalhadas de instalação e execução.
+- **Movimento**: WASD/Setas
+- **Interagir**: E
+- **Atacar**: Clique esquerdo
+- **Inventário**: I
+- **Crafting**: C
 
-## 🛠️ Tecnologias Utilizadas
+## Requisitos Técnicos
 
-- **Engines de Jogo**: Unity, Godot, Unreal Engine
-- **Linguagens**: C#, GDScript, JavaScript
-- **Arte e Design**: Blender, Photoshop, Aseprite
+- Motor: Godot 4.2+
+- Estilo: Pixel art 16x16 ou 32x32
+- Gênero: Sobrevivência, aventura, estratégia
 
-## 🤝 Como Contribuir
+## Objetivo Final
 
-Sinta-se à vontade para colaborar com ideias, sugestões de melhorias ou código. Para isso, abra uma issue ou envie um pull request com suas contribuições.
+Coletar todos os recursos necessários para construir uma jangada e escapar da ilha antes que os recursos se esgotem completamente.
 
-## 📢 Feedback
-
-Seu feedback é essencial! Caso tenha sugestões, encontre bugs ou queira discutir alguma ideia, fique à vontade para abrir uma issue ou entrar em contato.
-
-## 📄 Licença
-
-Este repositório está licenciado sob a [Licença MIT](LICENSE), o que permite liberdade para uso e modificação.
-
-2024
+**Status do projeto**: Em desenvolvimento inicial
