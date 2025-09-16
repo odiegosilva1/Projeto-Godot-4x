@@ -1,5 +1,7 @@
 # Projeto de Sobrevivência em Ilha - Godot 4
 
+![Captura de Tela do Projeto](screenshot.png)
+
 ## Visão Geral
 
 Um jogo 2D top-down de sobrevivência onde você está preso em uma ilha com recursos finitos. Sua missão é gerenciar recursos, enfrentar criaturas e construir uma jangada para escapar.
@@ -37,3 +39,5 @@ Um jogo 2D top-down de sobrevivência onde você está preso em uma ilha com rec
 Coletar todos os recursos necessários para construir uma jangada e escapar da ilha antes que os recursos se esgotem completamente.
 
 **Status do projeto**: Em desenvolvimento inicial
+
+---
