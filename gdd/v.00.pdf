@@ -1,0 +1,115 @@
+# GDD (Game Design Document) Básico - Jogo de Sobrevivência 2D Top-Down
+
+## Visão Geral
+Jogo de sobrevivência 2D top-down onde o jogador está preso em uma ilha com recursos finitos. Deve coletar recursos, enfrentar criaturas, gerenciar suas necessidades básicas e construir uma jangada para escapar.
+
+## Plataforma
+Godot Engine 4.2+
+
+## Gênero
+Sobrevivência, aventura, estratégia
+
+## Público-alvo
+Jogadores que gostam de jogos de sobrevivência e gerenciamento de recursos
+
+## Mecânicas Principais
+
+### Controles
+- Movimento: WASD ou setas
+- Interagir: E
+- Atacar: Botão esquerdo do mouse
+- Usar item: Botão direito do mouse
+- Abrir inventário: I
+- Abrir menu de crafting: C
+
+### Sistema de Sobrevivência
+- **Fome**: Diminui gradualmente, precisa ser reabastecida com comida
+- **Sede**: Diminui mais rápido que fome, precisa de água
+- **Vida**: Reduzida por ataques de inimigos ou condições extremas
+- **Cansaço**: Necessidade de dormir para restaurar energia
+
+### Sistema de Recursos
+- Recursos são finitos na ilha (árvores não ressurgem, minérios limitados)
+- Tipos de recursos:
+  - Madeira (de árvores)
+  - Pedra (de rochas)
+  - Fibra (de plantas)
+  - Comida (frutas, peixe, carne de animais)
+  - Água (de poços ou chuva)
+
+### Crafting e Construção
+- Sistema de crafting com receitas que são desbloqueadas ao encontrar recursos
+- Construção de ferramentas, armas, abrigo e a jangada final
+- Jangada requer recursos raros e difíceis de obter
+
+### Inimigos
+- Criaturas da ilha que atacam o jogador
+- Diferentes tipos com comportamentos variados
+- Aparecem mais à noite ou em áreas específicas
+
+## Progressão do Jogo
+
+### Fase Inicial
+- Coletar recursos básicos
+- Craft de ferramentas simples (machado, picareta)
+- Construir abrigo básico
+
+### Fase Intermediária
+- Explorar a ilha para encontrar recursos mais raros
+- Craft de armas para defesa
+- Gerenciar sistema de necessidades básicas
+
+### Fase Final
+- Coletar recursos para a jangada
+- Enfrentar inimigos mais difíceis que guardam recursos preciosos
+- Construir a jangada e escapar
+
+## Estrutura Técnica (Godot 4)
+
+### Cenas Principais
+```
+- Main (gerenciador principal)
+- Player (com scripts de movimento, vida, inventário)
+- World (mapa com tileset)
+- UI (interface do usuário)
+- Enemy (navegação e comportamento de inimigos)
+- ResourceNode (nós de recursos coletáveis)
+```
+
+### Scripts Principais
+- `player.gd`: Controla movimento, interações, sistema de vida
+- `inventory.gd`: Gerencia sistema de inventário
+- `crafting_system.gd`: Controla receitas e crafting
+- `enemy_ai.gd`: IA básica para inimigos
+- `resource_node.gd`: Controla recursos coletáveis
+- `game_manager.gd`: Gerencia estado do jogo e condições de vitória
+
+### Sistema de Save/Load
+- Salvar estado do inventário, posição do jogador e recursos coletados
+- Recursos coletados permanecem coletados
+
+## Arte e Assets
+- Estilo pixel art 16x16 ou 32x32
+- Tileset para ilha com diferentes biomas
+- Sprites para player, inimigos, recursos e itens
+- Animações simples para movimento e ações
+
+## Sons e Música
+- Efeitos sonoros para coleta, crafting, combate
+- Música ambiente tranquila para dia, tensa para noite
+- Sons de animais e criaturas
+
+## Interface
+- Barras de status (fome, sede, vida, cansaço)
+- Inventário com slots
+- Menu de crafting com categorias
+- Indicador de equipamento atual
+
+## Considerações de Design
+- Balanceamento entre taxa de consumo de recursos e disponibilidade
+- Dificuldade progressiva conforme dias passam
+- Sensação de urgência devido à finitude dos recursos
+- Satisfação ao progredir e desbloquear novos crafts
+
+---
+
