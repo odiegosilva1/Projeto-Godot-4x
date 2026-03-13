@@ -1,0 +1,32 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="unopllayer"
+
+[display]
+
+window/size/width=640
+window/size/height=480
+window/stretch/mode="viewport"
+
+[rendering]
+
+quality/directional_shadow/size=1024
+quality/directional_shadow/size.mobile=512
+quality/shading/force_vertex_shading=true
+quality/shading/force_vertex_shading.mobile=false
+environment/default_environment="res://default_env.tres"
