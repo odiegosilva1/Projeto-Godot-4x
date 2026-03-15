@@ -19,9 +19,8 @@ config/name="unopllayer"
 
 [display]
 
-window/size/width=640
-window/size/height=480
 window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
 
 [rendering]
 
