@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dr6iskxodbc75"]
+
+[ext_resource type="Script" uid="uid://bir2dft3gsd4n" path="res://tscens/scripts/player.gd" id="1_icqho"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l8nec"]
+albedo_color = Color(0.7490196, 0.22745098, 0.16470589, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_l8nec"]
+material = SubResource("StandardMaterial3D_l8nec")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_l8nec"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1530599238]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+script = ExtResource("1_icqho")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=339332475]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+cast_shadow = 0
+mesh = SubResource("CapsuleMesh_l8nec")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=482296027]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_l8nec")
+
+[node name="Pivot" type="Node3D" parent="." unique_id=192871980]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3912113, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Pivot" unique_id=1255550539]
+transform = Transform3D(2, 0, 0, 0, 1.8308902, 0.80488634, 0, -0.80488634, 1.83089, 0, 1.8361788, 3.7473104)
